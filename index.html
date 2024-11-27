@@ -14,7 +14,7 @@
         </div>
 
         <div class="derecha-header">
-            <button class="iniciar-sesion" id="inicio-sesion">Iniciar de sesión</button>
+            <button class="iniciar-sesion" onclick="inicioSesion()" >Iniciar de sesión</button>
             <button class="registro">Registro</button>
         </div>
     </header>
@@ -39,13 +39,14 @@
         </div>
     </div>
 
-    <nav>
-        <a href="#" class="genero">Ficción</a>
-        <a href="#" class="genero">Históricos</a>
-        <a href="#" class="genero">Tecnología</a>
-        <a href="#" class="genero">Autoayuda</a>
-        <a href="#" class="genero">Poesía</a>
-    </nav>
+
+        <nav>
+            <a href="#" class="genero" data-genero="Ficción">Ficción</a>
+            <a href="#" class="genero" data-genero="Históricos">Históricos</a>
+            <a href="#" class="genero" data-genero="Tecnología">Tecnología</a>
+            <a href="#" class="genero" data-genero="Autoayuda">Autoayuda</a>
+            <a href="#" class="genero" data-genero="Poesía">Poesía</a>
+        </nav>
 
     <div class="titulo">
         <h1 style="font-weight: 700;" id="titulo-genero">Todos los Libros</h1>
@@ -56,17 +57,17 @@
             <div class="libro-1 diseño_libros">
                 <img src="img/cien.jpg" alt="">
                 <h3>Cien años de Soledad <br><span>Gabriel García Márquez</span></h3>
-                <button class="boton-rentar">Rentar</button>
+                <button onclick="comprar(this)">Rentar</button>
             </div>
             <div class="libro-2 diseño_libros">
                 <img src="img/rayuela.jpg" alt="">
                 <h3>Rayuela <br><span>Julio Cortázar</span></h3>
-                <button>Rentar</button>
+                <button onclick="comprar(this)">Rentar</button>
             </div>
             <div class="libro-3 diseño_libros">
                 <img src="img/travesuras.jpg" alt="">
                 <h3>Travesuras de la Niña Mala<br><span>Mario Vargas LLosa</span></h3>
-                <button>Rentar</button>
+                <button onclick="comprar(this)">Rentar</button>
             </div>
         </section>
     </main>
